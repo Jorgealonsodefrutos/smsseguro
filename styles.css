@@ -1,0 +1,55 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita cualquier scroll horizontal */
+  }
+  
+/* Banner */
+.banner {
+    width: 100%; /* El banner ocupa el 100% del ancho de la pantalla */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita que el contenido dentro del banner desborde */
+}
+  
+.banner-desktop {
+    width: 100vw; /* Ajusta la imagen al ancho del viewport (pantalla) */
+    max-width: 100%; /* Evita que la imagen sea más grande que el contenedor */
+    height: auto; /* Mantiene las proporciones originales de la imagen */
+    display: block;
+}
+  
+.banner-mobile {
+    display: none; /* Oculta el banner móvil en pantallas grandes */
+}
+  
+/* Sección de términos y condiciones */
+.terms, .info {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Centra el contenido */
+ }
+  
+  h1, h2 {
+    color: #333; /* Color de los títulos */
+  }
+  
+  p {
+    color: #555; /* Color del texto */
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .banner-desktop {
+      display: none; /* Oculta el banner de escritorio en pantallas pequeñas */
+    }
+    .banner-mobile {
+      display: block; /* Muestra el banner móvil en pantallas pequeñas */
+      width: 100vw; /* Ajusta la imagen al ancho del viewport */
+      height: auto; /* Mantiene las proporciones originales de la imagen */
+    }
+  }
+  
